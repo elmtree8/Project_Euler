@@ -28,7 +28,8 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
-Got help from http://code.jasonbhill.com/python/project-euler-problem-11/
+**Grid is saved in grid.txt
+**Got help from http://code.jasonbhill.com/python/project-euler-problem-11/
 '''
 
 def gridproduct(file)

@@ -16,3 +16,29 @@ We can see that 28 is the first triangle number to have over five divisors.
 
 What is the value of the first triangle number to have over five hundred divisors?
 '''
+
+def getdivisors(number)
+	divisors = 0
+	for i in 1..Math.sqrt(number)
+		if number % i == 0
+			divisors += 2
+		end
+	end
+	return divisors
+end
+
+def trianglenumbers(numberdivisors)
+	number = 1
+	add = 2
+	while true
+		number = number + add
+		add += 1
+		if getdivisors(number) > numberdivisors
+			return number
+		end
+	end
+end
+
+print "Enter a number: "
+numberdivisors = gets.chomp.to_i
+puts "The first triangle number with over #{numberdivisors} is #{trianglenumbers(numberdivisors)}"
